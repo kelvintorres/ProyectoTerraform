@@ -5,7 +5,7 @@ ssh_pub_path = "C:/Users/kelvin/.ssh/id_rsa.pub"
 #Región de despliegue
 region = "fra1"
 # Nombre del proyecto
-project_name = "proyectoterra"
+project_name = "proyectojenkins"
 # Usuario de docker
 docker_user = "kelvin"
 #Aqui defino la ruta del dispositivo del volumen
