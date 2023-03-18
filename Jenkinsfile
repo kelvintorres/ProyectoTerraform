@@ -3,7 +3,7 @@
     stages {
         stage('Instalar y Ejecutar Terraform') {
             steps {
-                sh 'sudo ./script.sh'
+                sh 'sudo script.sh'
             }
         }
     }
