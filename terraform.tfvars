@@ -7,7 +7,7 @@ region = "fra1"
 # Nombre del proyecto
 project_name = "proyectojenkins"
 # Usuario de docker
-docker_user = "kelvin"
+docker_user = "root"
 #Aqui defino la ruta del dispositivo del volumen
 device_path = "/dev/disk/by-id/scsi-0DO_Volume_docker-demo-docker-volume"
 # Aqui defino la ruta del montaje del volumen
