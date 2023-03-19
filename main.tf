@@ -42,7 +42,12 @@ resource "digitalocean_droplet" "docker" {
     size   = var.droplet_size
     backups = true
     user_data = data.template_file.userdata.rendered
-    ssh_keys = [digitalocean_ssh_key.docker-ssh.fingerprint]
+    #ssh_keys = [digitalocean_ssh_key.docker-ssh.fingerprint]
+    
+    
+    ssh_keys = [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPDVFetd4ge71+PbM7pGd08PpdyXsN08MmbafxvW92OYdpDfiHDOfyoveOKtjGiqrbg5x36nNX/xXORJNkzV4NJT0pVua2+Wf81O+ugpUNl/SyY9xSnB4wMPAkKlU4JVyISRvqapKGojiFJqPVpz8VPwqbaNwqehTC/ofHJo89N4QbGq8Ff63ul6iy4OA3FrJuo5zzP1j/+3qr1y1A1RRMvLkTJMUjAPtjrwYZC4MB74kDA9pyqkxWZ0wlKUZjmJo5Ll/ZUcPK4EibkQQGjdmKG/fa/BTW58xBFTvivzf6FiI1iSXoXv9i2MlYiLedxRtulUW1xN6vX7ix6AmSl6upF8fv2E74aLzpQhAEaQPRrleWmdMiOabPX8T6QBZ1uk0IMlOaU/eIGcgHfllPU+61Jn7L5cczbY7o43rGjG6lOl/nsf114UWXjVF6kN79oOkyQnhIRj4tDf5vUwjR1EB5i943l3Yg8ui+3eL2buRIEkM9pVwXQg48qegLRHfrmL0= root@proyectoterra2-docker"
+  ]
 }
 
 
